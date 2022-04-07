@@ -5,7 +5,7 @@ const answer = document.querySelector(".answer");
 let ratingValue =  ratingNumbers.innerHTML;
 let pressed = false;
 
-if(window.location.href === "http://127.0.0.1:5500/index.html") {
+if(window.location.href === "index.html") {
 
 
 
@@ -37,7 +37,7 @@ submitButton.addEventListener("click", () => {
 
 }
 
-if (window.location.href === "http://127.0.0.1:5500/thankyou.html"){
+if (window.location.href === "thankyou.html"){
 
   let result = JSON.parse(localStorage.getItem('rating'));
   answer.innerHTML = +result;
